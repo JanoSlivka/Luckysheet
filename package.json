@@ -45,7 +45,7 @@
     "pako": "^1.0.11"
   },
   "scripts": {
-    "build": "cross-env NODE_ENV=development gulp build",
+    "build": "cross-env NODE_ENV=production gulp build",
     "remove-package": "del *.tgz",
     "package": "npm run build && npm pack",
     "publish-package": "npm run package && npm publish --access public && npm run remove-package",
